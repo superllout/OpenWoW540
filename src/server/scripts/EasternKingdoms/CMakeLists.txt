@@ -17,8 +17,6 @@ set(scripts_STAT_SRCS
   EasternKingdoms/AlteracValley/boss_drekthar.cpp
   EasternKingdoms/AlteracValley/boss_vanndar.cpp
   EasternKingdoms/AlteracValley/alterac_valley.cpp
-  EasternKingdoms/BaradinHold/boss_alizabal.cpp
-  EasternKingdoms/BaradinHold/instance_baradin_hold.cpp
   EasternKingdoms/Scholomance/boss_the_ravenian.cpp
   EasternKingdoms/Scholomance/boss_instructor_malicia.cpp
   EasternKingdoms/Scholomance/boss_death_knight_darkreaver.cpp
@@ -35,17 +33,6 @@ set(scripts_STAT_SRCS
   EasternKingdoms/Scholomance/boss_ras_frostwhisper.cpp
   EasternKingdoms/Scholomance/boss_kirtonos_the_herald.cpp
   EasternKingdoms/zone_isle_of_queldanas.cpp
-  EasternKingdoms/ZulGurub/boss_grilek.cpp
-  EasternKingdoms/ZulGurub/boss_hazzarah.cpp
-  EasternKingdoms/ZulGurub/boss_jindo_the_godbreaker.cpp
-  EasternKingdoms/ZulGurub/boss_kilnara.cpp
-  EasternKingdoms/ZulGurub/boss_mandokir.cpp
-  EasternKingdoms/ZulGurub/boss_renataki.cpp
-  EasternKingdoms/ZulGurub/boss_venoxis.cpp
-  EasternKingdoms/ZulGurub/boss_wushoolay.cpp
-  EasternKingdoms/ZulGurub/boss_zanzil.cpp
-  EasternKingdoms/ZulGurub/instance_zulgurub.cpp
-  EasternKingdoms/ZulGurub/zulgurub.h
   EasternKingdoms/zone_wetlands.cpp
   EasternKingdoms/zone_arathi_highlands.cpp
   EasternKingdoms/Gnomeregan/instance_gnomeregan.cpp
@@ -176,15 +163,6 @@ set(scripts_STAT_SRCS
   EasternKingdoms/BlackwingLair/blackwing_lair.h
   EasternKingdoms/zone_blasted_lands.cpp
   EasternKingdoms/zone_stormwind_city.cpp
-  EasternKingdoms/ZulAman/boss_halazzi.cpp
-  EasternKingdoms/ZulAman/boss_hexlord.cpp
-  EasternKingdoms/ZulAman/boss_daakara.cpp
-  EasternKingdoms/ZulAman/boss_akilzon.cpp
-  EasternKingdoms/ZulAman/instance_zulaman.cpp
-  EasternKingdoms/ZulAman/boss_janalai.cpp
-  EasternKingdoms/ZulAman/boss_nalorakk.cpp
-  EasternKingdoms/ZulAman/zulaman.cpp
-  EasternKingdoms/ZulAman/zulaman.h
   EasternKingdoms/zone_hinterlands.cpp
   EasternKingdoms/zone_western_plaguelands.cpp
   EasternKingdoms/zone_alterac_mountains.cpp
