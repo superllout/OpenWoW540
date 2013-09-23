@@ -15,14 +15,14 @@ set(scripts_STAT_SRCS
   Pandaria/worldboss_ordos.cpp
   Pandaria/worldboss_xuen.cpp
   Pandaria/worldboss_yulon.cpp
-  Pandaria/zone_timeless_isle.cpp
-  Pandaria/timeless_isle.h
-  Pandaria/isle_of_thunder.h
-  Pandaria/zone_isle_of_thunder.cpp
+  Pandaria/Timelessisle/zone_timeless_isle.cpp
+  Pandaria/Timelessisle/timeless_isle.h
+  Pandaria/IsleofThunder/isle_of_thunder.h
+  Pandaria/IsleofThunder/zone_isle_of_thunder.cpp
   Pandaria/worldboss_nalak.cpp
-  Pandaria/isle_of_giants.h
+  Pandaria/IsleofGiants/isle_of_giants.h
   Pandaria/worldboss_oondasta.cpp
-  Pandaria/zone_isle_of_geants.cpp
+  Pandaria/IsleofGiants/zone_isle_of_geants.cpp
   Pandaria/zone_dread_wastes.cpp
   Pandaria/zone_jade_forest.cpp
   Pandaria/zone_krasarang_wilds.cpp
