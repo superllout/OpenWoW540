@@ -40,6 +40,7 @@ if(SCRIPTS)
   include(Events/CMakeLists.txt)
   include(Pandaria/CMakeLists.txt)
   include(Scenario/CMakeLists.txt)
+  include(Cataclysm/CMakeLists.txt)
 endif()
 
 message(STATUS "SCRIPT PREPARATION COMPLETE")
