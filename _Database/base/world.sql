@@ -1,0 +1,1 @@
+-- BurstEmu World Database --
