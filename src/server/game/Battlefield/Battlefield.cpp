@@ -1166,3 +1166,11 @@ bool BfCapturePoint::IsInsideObjective(Player* player) const
 {
     return m_activePlayers[player->GetTeamId()].find(player->GetGUID()) != m_activePlayers[player->GetTeamId()].end();
 }
+
+/*
+*
+* This Code is the property of public and private projects BurstEmu & OpenEmu In the event of 
+* unauthorized modification and unauthorized copy, a complaint can and shook filed. 
+* Code under Copyright
+*
+*/
