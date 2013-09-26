@@ -119,6 +119,14 @@ set(scripts_STAT_SRCS
   Kalimdor/Firelands/instance_firelands.cpp
   Kalimdor/Firelands/firelands.h
   Kalimdor/Firelands/boss_alysrazor.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_blackhorn.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_deathwing.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_hagara.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_morchok.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_yorsahj.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_zonozz.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/dragon_soul.h
+  Kalimdor/CavernsOfTime/DragonSoul/instance_dragon_soul.cpp
 )
 
 message("  -> Prepared: Kalimdor")

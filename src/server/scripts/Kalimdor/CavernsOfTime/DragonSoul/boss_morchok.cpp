@@ -3,5 +3,3 @@
 * 
 */
 
-#include "ScriptPCH.h"
-#include "bastion_of_twilight.h"

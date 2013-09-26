@@ -1,6 +1,6 @@
 /*
-* Copyright (C) 2011-2012 ProjectStudioMirage <http://www.studio-mirage.fr/>
-* Copyright (C) 2011-2012 https://github.com/Asardial
+* Copyright (C) 2011-2013 OpenEmu <http://www.openemulator.com/>
+* 
 */
 
 #include "ScriptPCH.h"
