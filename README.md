@@ -5,7 +5,7 @@ This emulator is based on a version of TrinityCore
 OpenWoW540 is World of Warcraft Emulator version 5.4.0 ( MoP ) - Dev -
 
 
-Our Emulator est Open !!
+Our Emulator is Open !!
 
 Our repository is OpenSource, but we expect people who use it to help us develop.
 
