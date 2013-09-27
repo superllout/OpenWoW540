@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : BurstEmu 5.4.0
+Source Server         : OpenEmu 5.4.0
 Source Server Version : 50509
 Source Host           : localhost:3306
 Source Database       : auth_database
@@ -574,7 +574,7 @@ CREATE TABLE `realmcharacters` (
 DROP TABLE IF EXISTS `realmlist`;
 CREATE TABLE `realmlist` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(32) NOT NULL DEFAULT 'BurstEmu',
+  `name` varchar(32) NOT NULL DEFAULT 'OpenEmu',
   `address` varchar(255) NOT NULL DEFAULT '127.0.0.1',
   `localAddress` varchar(255) NOT NULL DEFAULT '127.0.0.1',
   `localSubnetMask` varchar(255) NOT NULL DEFAULT '255.255.255.0',
@@ -592,7 +592,7 @@ CREATE TABLE `realmlist` (
 -- ----------------------------
 -- Records of realmlist
 -- ----------------------------
-INSERT INTO realmlist VALUES ('1', 'BurstEmu 5.4.0', '127.0.0.1', '127.0.0.1', '255.255.255.0', '8085', '1', '0', '1', '0', '0', '17371');
+INSERT INTO realmlist VALUES ('1', 'OpenEmu 5.4.0', '127.0.0.1', '127.0.0.1', '255.255.255.0', '8085', '1', '0', '1', '0', '0', '17371');
 
 -- ----------------------------
 -- Table structure for `realm_classes`
@@ -659,11 +659,11 @@ CREATE TABLE `uptime` (
   `starttime` int(10) unsigned NOT NULL DEFAULT '0',
   `uptime` int(10) unsigned NOT NULL DEFAULT '0',
   `maxplayers` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `revision` varchar(255) NOT NULL DEFAULT 'BurstEmu',
+  `revision` varchar(255) NOT NULL DEFAULT 'OpenEmu',
   PRIMARY KEY (`realmid`,`starttime`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Uptime system';
 
 -- ----------------------------
 -- Records of uptime
 -- ----------------------------
-INSERT INTO uptime VALUES ('1', '0', '0', '0', 'BurstEmu');
+INSERT INTO uptime VALUES ('1', '0', '0', '0', 'OpenEmu');
