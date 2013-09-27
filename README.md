@@ -14,11 +14,14 @@ On our forum, you can join our staff, become a contributor.
 We also planned the opening of an international kingdom tested for all kinds. This, once the functional emulator.
 
 Login : Work
+
 World : Don't Work
 
 Server : x86 / x64 - Work
-Client support : x86 Build 17371 - Work
-Client support : x64 Build 17371 - Don't work
+
+Client support : x86 Build 17399 - Work
+
+Client support : x64 Build 17399 - Don't work
 
 
 
