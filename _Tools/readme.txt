@@ -8,5 +8,8 @@ Thanks you to OpenEmulator - OpenEmu is a private project in all game emulator.
 
 
 **********************************
-DBC & Maps extracted :: 09/18/2013
+DBC & Maps extracted :: 09/26/2013
 **********************************
+https://github.com/OpenEmulator/OpenRepack
+
+For full tools
