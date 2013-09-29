@@ -29,7 +29,7 @@
 #include "GuildFinderMgr.h"
 #include "GuildMgr.h"
 #include "Language.h"
-#include "LFGMgr.h"
+#include "DungeonLFGMgr.h"
 #include "Log.h"
 #include "ObjectAccessor.h"
 #include "ObjectMgr.h"

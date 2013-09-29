@@ -27,7 +27,7 @@ EndScriptData */
 #include "ScriptedCreature.h"
 #include "SpellMgr.h"
 #include "scarlet_monastery.h"
-#include "LFGMgr.h"
+#include "DungeonLFGMgr.h"
 #include "Player.h"
 #include "Group.h"
 #include "SpellInfo.h"

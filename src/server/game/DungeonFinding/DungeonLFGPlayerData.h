@@ -18,7 +18,7 @@
 #ifndef _LFGPLAYERDATA_H
 #define _LFGPLAYERDATA_H
 
-#include "LFG.h"
+#include "DungeonLFG.h"
 
 namespace lfg
 {

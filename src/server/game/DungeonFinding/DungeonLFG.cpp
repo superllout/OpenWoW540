@@ -15,7 +15,7 @@
  * with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "LFG.h"
+#include "DungeonLFG.h"
 #include "Language.h"
 #include "ObjectMgr.h"
 

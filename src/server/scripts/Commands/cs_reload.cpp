@@ -29,7 +29,7 @@ EndScriptData */
 #include "CreatureTextMgr.h"
 #include "DisableMgr.h"
 #include "Language.h"
-#include "LFGMgr.h"
+#include "DungeonLFGMgr.h"
 #include "MapManager.h"
 #include "ObjectMgr.h"
 #include "ScriptMgr.h"

@@ -68,7 +68,7 @@
 #include "Transport.h"
 #include "ScriptMgr.h"
 #include "AddonMgr.h"
-#include "LFGMgr.h"
+#include "DungeonLFGMgr.h"
 #include "ConditionMgr.h"
 #include "DisableMgr.h"
 #include "CharacterDatabaseCleaner.h"

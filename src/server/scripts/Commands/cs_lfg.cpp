@@ -18,7 +18,7 @@
 #include "ScriptMgr.h"
 #include "Chat.h"
 #include "Language.h"
-#include "LFGMgr.h"
+#include "DungeonLFGMgr.h"
 #include "Group.h"
 #include "Player.h"
 

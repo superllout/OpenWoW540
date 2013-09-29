@@ -23,6 +23,7 @@ file(GLOB_RECURSE sources_DataStores DataStores/*.cpp DataStores/*.h)
 file(GLOB_RECURSE sources_DungeonFinding DungeonFinding/*.cpp DungeonFinding/*.h)
 file(GLOB_RECURSE sources_Entities Entities/*.cpp Entities/*.h)
 file(GLOB_RECURSE sources_Events Events/*.cpp Events/*.h)
+file(GLOB_RECURSE sources_FlexFinding FlexFinding/*.cpp FlexFinding/*.h)
 file(GLOB_RECURSE sources_Globals Globals/*.cpp Globals/*.h)
 file(GLOB_RECURSE sources_Grids Grids/*.cpp Grids/*.h)
 file(GLOB_RECURSE sources_Groups Groups/*.cpp Groups/*.h)
@@ -37,6 +38,7 @@ file(GLOB_RECURSE sources_Movement Movement/*.cpp Movement/*.h)
 file(GLOB_RECURSE sources_OutdoorPvP OutdoorPvP/*.cpp OutdoorPvP/*.h)
 file(GLOB_RECURSE sources_Pools Pools/*.cpp Pools/*.h)
 file(GLOB_RECURSE sources_Quests Quests/*.cpp Quests/*.h)
+file(GLOB_RECURSE sources_RaidFinding RaidFinding/*.cpp RaidFinding/*.h)
 file(GLOB_RECURSE sources_Reputation Reputation/*.cpp Reputation/*.h)
 file(GLOB_RECURSE sources_Scripting Scripting/*.cpp Scripting/*.h)
 file(GLOB_RECURSE sources_Server Server/*.cpp Server/*.h)
@@ -73,6 +75,7 @@ set(game_STAT_SRCS
   ${sources_DungeonFinding}
   ${sources_Entities}
   ${sources_Events}
+  ${sources_FlexFinding}
   ${sources_Globals}
   ${sources_Grids}
   ${sources_Groups}
@@ -87,6 +90,7 @@ set(game_STAT_SRCS
   ${sources_OutdoorPvP}
   ${sources_Pools}
   ${sources_Quests}
+  ${sources_RaidFinding}
   ${sources_Reputation}
   ${sources_Scripting}
   ${sources_Server}
@@ -161,6 +165,7 @@ include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}/Entities/Vehicle
   ${CMAKE_CURRENT_SOURCE_DIR}/Entities/Transport
   ${CMAKE_CURRENT_SOURCE_DIR}/Events
+  ${CMAKE_CURRENT_SOURCE_DIR}/FlexFinding
   ${CMAKE_CURRENT_SOURCE_DIR}/Globals
   ${CMAKE_CURRENT_SOURCE_DIR}/Grids/Cells
   ${CMAKE_CURRENT_SOURCE_DIR}/Grids/Notifiers
@@ -181,6 +186,7 @@ include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}/Pools
   ${CMAKE_CURRENT_SOURCE_DIR}/PrecompiledHeaders
   ${CMAKE_CURRENT_SOURCE_DIR}/Quests
+  ${CMAKE_CURRENT_SOURCE_DIR}/RaidFinding
   ${CMAKE_CURRENT_SOURCE_DIR}/Reputation
   ${CMAKE_CURRENT_SOURCE_DIR}/Scripting
   ${CMAKE_CURRENT_SOURCE_DIR}/Server/Protocol

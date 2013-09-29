@@ -32,7 +32,7 @@
 #include "GuildMgr.h"
 #include "InstanceSaveMgr.h"
 #include "Language.h"
-#include "LFGMgr.h"
+#include "DungeonLFGMgr.h"
 #include "Log.h"
 #include "MapManager.h"
 #include "ObjectMgr.h"

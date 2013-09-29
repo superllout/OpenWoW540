@@ -18,7 +18,7 @@
 #ifndef _LFGGROUPDATA_H
 #define _LFGGROUPDATA_H
 
-#include "LFG.h"
+#include "DungeonLFG.h"
 
 namespace lfg
 {

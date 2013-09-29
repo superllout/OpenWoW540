@@ -33,7 +33,7 @@
 #include "ace/INET_Addr.h"
 #include "Player.h"
 #include "Pet.h"
-#include "LFG.h"
+#include "DungeonLFG.h"
 #include "GroupMgr.h"
 #include "MMapFactory.h"
 
