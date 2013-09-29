@@ -43,6 +43,7 @@ set(scripts_STAT_SRCS
   Scenario/scenario_trovers_of_the_thunder_king.cpp
   Scenario/scenario_unga_ingoo.cpp
   Scenario/scenario_vrypt_of_forgotten_kings.cpp
+  Scenario/scenario.h
 )
 
 message("  -> Prepared: Scenario")
