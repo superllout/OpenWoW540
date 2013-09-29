@@ -73,8 +73,8 @@ public:
 
 			if (deflagration_sacree<= diff)
 			{
-			    if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_deflagration_sacree);
+			    if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_deflagration_sacree);
 				deflagration_sacree  = 90000;							
             }
 		    else

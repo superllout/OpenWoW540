@@ -68,8 +68,8 @@ public:
 
 		    if (eclair_de_tempete<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_eclair_de_tempete);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_eclair_de_tempete);
 				
                 eclair_de_tempete = 30000; 
             }
@@ -140,8 +140,8 @@ public:
 					
 			 if (attaque_mentale<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_attaque_mentale);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_attaque_mentale);
 												
                 attaque_mentale = 10000; 
             }
@@ -150,8 +150,8 @@ public:
 
 		    if (renovation<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_renovation);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_renovation);
 				
                 renovation = 15000; 
             }
@@ -160,8 +160,8 @@ public:
 
 			if (soins<= diff)
 			{
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_soins);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_soins);
 				
 				soins  = 20000;						
             }
@@ -225,8 +225,8 @@ public:
 
             if (chaine_d_eclairs<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_chaine_d_eclairs);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_chaine_d_eclairs);
 												
                 chaine_d_eclairs = 50000; 
             }
@@ -244,8 +244,8 @@ public:
 
 			if (marteau_tempete<= diff)
 			{
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_marteau_tempete);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_marteau_tempete);
 				
 				marteau_tempete  = 45000;
             }
@@ -254,8 +254,8 @@ public:
 				
 			if (tir<= diff)
 			{
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_tir);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_tir);
 				
 				tir  = 25000;							
             }

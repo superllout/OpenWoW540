@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
+ * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
  * Copyright (C) 2006-2009 ScriptDev2 <https://scriptdev2.svn.sourceforge.net/>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -63,7 +63,7 @@ public:
 
         uint32 encounter[MAX_ENCOUNTER];
 
-        void Initialize()
+        void Initialize() OVERRIDE
         {
             memset(&encounter, 0, sizeof(encounter));
 
@@ -78,7 +78,7 @@ public:
             DoorHighInquisitorGUID = 0;
         }
 
-        void OnGameObjectCreate(GameObject* go)
+        void OnGameObjectCreate(GameObject* go) OVERRIDE
         {
             switch (go->GetEntry())
             {
@@ -87,7 +87,7 @@ public:
             }
         }
 
-        void OnCreatureCreate(Creature* creature)
+        void OnCreatureCreate(Creature* creature) OVERRIDE
         {
             switch (creature->GetEntry())
             {

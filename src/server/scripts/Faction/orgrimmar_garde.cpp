@@ -32,7 +32,7 @@ struct mob_coursier_du_vent_dorgrimmarAI : public ScriptedAI
 				
 				if (tir<= diff)
 				{
-				        DoCast(me->getVictim(), spell_tir);
+				        // DoCast(me->getVictim(), spell_tir);
 						tir = 5000;
 				} else tir -= diff;
 				DoMeleeAttackIfReady();
@@ -75,13 +75,13 @@ struct mob_grunt_dorgrimmarAI : public ScriptedAI
 				
 				if (tir<= diff)
 				{
-				        DoCast(me->getVictim(), spell_tir);
+				        // DoCast(me->getVictim(), spell_tir);
 						tir = 5000;
 				} else tir -= diff;
 				
 				if (enchainement<= diff)
 				{
-				        DoCast(me->getVictim(), spell_enchainement);
+				        // DoCast(me->getVictim(), spell_enchainement);
 						enchainement = 5000;
 				} else enchainement -= diff;
 				DoMeleeAttackIfReady();
@@ -130,25 +130,25 @@ struct mob_eclaireur_fortemainAI : public ScriptedAI
 				
 				if (cracher<= diff)
 				{
-				        DoCast(me->getVictim(), spell_cracher);
+				        // DoCast(me->getVictim(), spell_cracher);
 						cracher = 45000;
 				} else cracher -= diff;
 				
 				if (odeur_de_banane_pourrie<= diff)
 				{
-				        DoCast(me->getVictim(), spell_odeur_de_banane_pourrie);
+				        // DoCast(me->getVictim(), spell_odeur_de_banane_pourrie);
 						odeur_de_banane_pourrie = 45000;
 				} else odeur_de_banane_pourrie -= diff;
 				
 				if (odeur_de_pomme_pourrie<= diff)
 				{
-				        DoCast(me->getVictim(), spell_odeur_de_pomme_pourrie);
+				        // DoCast(me->getVictim(), spell_odeur_de_pomme_pourrie);
 						odeur_de_pomme_pourrie = 45000;
 				}
 				
 				if (tir<= diff)
 				{
-				        DoCast(me->getVictim(), spell_tir);
+				        // DoCast(me->getVictim(), spell_tir);
 						tir = 5000;
 				} else tir -= diff;
 				DoMeleeAttackIfReady();

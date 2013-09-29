@@ -52,8 +52,8 @@ public:
 
             if (charge_du_berserker<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_charge_du_berserker);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_charge_du_berserker);
 												
                 charge_du_berserker = 30000; 
             }

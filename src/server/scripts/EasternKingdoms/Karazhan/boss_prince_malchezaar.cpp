@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
+ * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
  * Copyright (C) 2006-2009 ScriptDev2 <https://scriptdev2.svn.sourceforge.net/>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -364,24 +364,22 @@ public:
                 me->GetRandomNearPosition(pos, 60);
             else
             {
-                std::vector<InfernalPoint*>::iterator itr = positions.begin()+rand()%positions.size();
-                point = *itr;
-                positions.erase(itr);
-                pos.Relocate(point->x, point->y, INFERNAL_Z);
+                point = Trinity::Containers::SelectRandomContainerElement(positions);
+                pos.Relocate(point->x, point->y, INFERNAL_Z, frand(0.0f, float(M_PI * 2)));
             }
 
-            Creature* Infernal = me->SummonCreature(NETHERSPITE_INFERNAL, pos, TEMPSUMMON_TIMED_DESPAWN, 180000);
+            Creature* infernal = me->SummonCreature(NETHERSPITE_INFERNAL, pos, TEMPSUMMON_TIMED_DESPAWN, 180000);
 
-            if (Infernal)
+            if (infernal)
             {
-                Infernal->SetDisplayId(INFERNAL_MODEL_INVISIBLE);
-                Infernal->setFaction(me->getFaction());
+                infernal->SetDisplayId(INFERNAL_MODEL_INVISIBLE);
+                infernal->setFaction(me->getFaction());
                 if (point)
-                    CAST_AI(netherspite_infernal::netherspite_infernalAI, Infernal->AI())->point=point;
-                CAST_AI(netherspite_infernal::netherspite_infernalAI, Infernal->AI())->malchezaar=me->GetGUID();
+                    CAST_AI(netherspite_infernal::netherspite_infernalAI, infernal->AI())->point=point;
+                CAST_AI(netherspite_infernal::netherspite_infernalAI, infernal->AI())->malchezaar=me->GetGUID();
 
-                infernals.push_back(Infernal->GetGUID());
-                DoCast(Infernal, SPELL_INFERNAL_RELAY);
+                infernals.push_back(infernal->GetGUID());
+                DoCast(infernal, SPELL_INFERNAL_RELAY);
             }
 
             Talk(SAY_SUMMON);

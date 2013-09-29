@@ -52,8 +52,8 @@ public:
 
             if (fleche_noire<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_fleche_noire);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_fleche_noire);
 				
                 fleche_noire  = 45000; 
             }
@@ -62,8 +62,8 @@ public:
 
 		    if (fleche_multiples<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_fleche_multiples);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_fleche_multiples);
 				
                 fleche_multiples = 30000; 
             }
@@ -90,8 +90,8 @@ public:
 				
 			if (tir<= diff)
 			{
-			    if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_tir);
+			    if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_tir);
 					
 				tir = 7000;
 				

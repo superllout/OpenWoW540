@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
+ * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
  * Copyright (C) 2006-2009 ScriptDev2 <https://scriptdev2.svn.sourceforge.net/>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -609,7 +609,7 @@ class spell_ooze_zap : public SpellScriptLoader
         {
             PrepareSpellScript(spell_ooze_zap_SpellScript);
 
-            bool Validate(SpellInfo const* /*spellEntry*/) OVERRIDE
+            bool Validate(SpellInfo const* /*spellInfo*/) OVERRIDE
             {
                 if (!sSpellMgr->GetSpellInfo(SPELL_OOZE_ZAP))
                     return false;
@@ -656,7 +656,7 @@ class spell_ooze_zap_channel_end : public SpellScriptLoader
         {
             PrepareSpellScript(spell_ooze_zap_channel_end_SpellScript);
 
-            bool Validate(SpellInfo const* /*spellEntry*/) OVERRIDE
+            bool Validate(SpellInfo const* /*spellInfo*/) OVERRIDE
             {
                 if (!sSpellMgr->GetSpellInfo(SPELL_OOZE_ZAP_CHANNEL_END))
                     return false;
@@ -692,7 +692,7 @@ class spell_energize_aoe : public SpellScriptLoader
         {
             PrepareSpellScript(spell_energize_aoe_SpellScript);
 
-            bool Validate(SpellInfo const* /*spellEntry*/) OVERRIDE
+            bool Validate(SpellInfo const* /*spellInfo*/) OVERRIDE
             {
                 if (!sSpellMgr->GetSpellInfo(SPELL_ENERGIZED))
                     return false;

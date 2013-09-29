@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
+ * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -408,7 +408,8 @@ public:
                                     me->InterruptNonMeleeSpells(false);
 
                                 Talk(EMOTE_BREATH);
-                                DoCast(me, PointData->SpellId);
+                                if (PointData) /// @todo: In what cases is this null? What should we do?
+                                    DoCast(me, PointData->SpellId);
                                 events.ScheduleEvent(EVENT_DEEP_BREATH, 70000);
                             }
                             break;

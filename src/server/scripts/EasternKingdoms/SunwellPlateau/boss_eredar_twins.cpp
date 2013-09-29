@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
+ * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -473,6 +473,7 @@ public:
             {
             case SPELL_BLAZE:
                 target->CastSpell(target, SPELL_BLAZE_SUMMON, true);
+                break;
             case SPELL_CONFLAGRATION:
             case SPELL_FLAME_SEAR:
                 HandleTouchedSpells(target, SPELL_FLAME_TOUCHED);

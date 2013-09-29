@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
+ * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
  * Copyright (C) 2006-2009 ScriptDev2 <https://scriptdev2.svn.sourceforge.net/>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -47,7 +47,7 @@ public:
         uint64 DoorWardGUID;
         int WardKeeperDeath;
 
-        void Initialize()
+        void Initialize() OVERRIDE
         {
             WardKeeperDeath = 0;
             DoorWardGUID = 0;
@@ -69,7 +69,7 @@ public:
             return NULL;
         }
 
-        void OnGameObjectCreate(GameObject* go)
+        void OnGameObjectCreate(GameObject* go) OVERRIDE
         {
             switch (go->GetEntry())
             {

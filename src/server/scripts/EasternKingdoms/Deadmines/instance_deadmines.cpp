@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
+ * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
  * Copyright (C) 2006-2008 ScriptDev2 <https://scriptdev2.svn.sourceforge.net/>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -72,7 +72,7 @@ class instance_deadmines : public InstanceMapScript
             uint32 PiratesDelay_Timer;
             uint64 uiSmiteChestGUID;
 
-            void Initialize()
+            void Initialize() OVERRIDE
             {
                 FactoryDoorGUID = 0;
                 IronCladDoorGUID = 0;
@@ -86,7 +86,7 @@ class instance_deadmines : public InstanceMapScript
                 uiSmiteChestGUID = 0;
             }
 
-            virtual void Update(uint32 diff)
+            virtual void Update(uint32 diff) OVERRIDE
             {
                 if (!IronCladDoorGUID || !DefiasCannonGUID || !DoorLeverGUID)
                     return;
@@ -188,7 +188,7 @@ class instance_deadmines : public InstanceMapScript
                     pDoorLever->SetUInt32Value(GAMEOBJECT_FLAGS, 4);
             }
 
-            void OnGameObjectCreate(GameObject* go)
+            void OnGameObjectCreate(GameObject* go) OVERRIDE
             {
                 switch (go->GetEntry())
                 {

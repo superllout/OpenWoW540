@@ -20,6 +20,7 @@ set(scripts_STAT_SRCS
   Kalimdor/ZulFarrak/zulfarrak.h
   Kalimdor/ZulFarrak/zulfarrak.cpp
   Kalimdor/ZulFarrak/instance_zulfarrak.cpp
+  Kalimdor/ZulFarrak/boss_zum_rah.cpp
   Kalimdor/CavernsOfTime/EscapeFromDurnholdeKeep/boss_epoch_hunter.cpp
   Kalimdor/CavernsOfTime/EscapeFromDurnholdeKeep/old_hillsbrad.h
   Kalimdor/CavernsOfTime/EscapeFromDurnholdeKeep/boss_leutenant_drake.cpp
@@ -46,6 +47,16 @@ set(scripts_STAT_SRCS
   Kalimdor/CavernsOfTime/CullingOfStratholme/culling_of_stratholme.cpp
   Kalimdor/CavernsOfTime/CullingOfStratholme/instance_culling_of_stratholme.cpp
   Kalimdor/CavernsOfTime/CullingOfStratholme/culling_of_stratholme.h
+  Kalimdor/CavernsOfTime/DragonSoul/boss_hagara_the_stormbinder.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_morchok.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_warlord_zon_ozz.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_yor_sahj_the_unsleeping.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/dragonsoul.h
+  Kalimdor/CavernsOfTime/DragonSoul/instance_dragonsoul.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_madness_of_deathwing.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_spine_of_deathwing.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_ultraxion.cpp
+  Kalimdor/CavernsOfTime/DragonSoul/boss_warmaster_blackhorn.cpp
   Kalimdor/CavernsOfTime/TheBlackMorass/the_black_morass.h
   Kalimdor/CavernsOfTime/TheBlackMorass/instance_the_black_morass.cpp
   Kalimdor/CavernsOfTime/TheBlackMorass/boss_chrono_lord_deja.cpp
@@ -66,6 +77,7 @@ set(scripts_STAT_SRCS
   Kalimdor/Maraudon/boss_landslide.cpp
   Kalimdor/Maraudon/boss_celebras_the_cursed.cpp
   Kalimdor/Maraudon/boss_noxxion.cpp
+  Kalimdor/Maraudon/instance_maraudon.cpp
   Kalimdor/TempleOfAhnQiraj/boss_fankriss.cpp
   Kalimdor/TempleOfAhnQiraj/boss_huhuran.cpp
   Kalimdor/TempleOfAhnQiraj/instance_temple_of_ahnqiraj.cpp
@@ -111,6 +123,8 @@ set(scripts_STAT_SRCS
   Kalimdor/OnyxiasLair/boss_onyxia.cpp
   Kalimdor/OnyxiasLair/onyxias_lair.h
   Kalimdor/OnyxiasLair/instance_onyxias_lair.cpp
+  Kalimdor/RagefireChasm/instance_ragefire_chasm.cpp
+  Kalimdor/DireMaul/instance_dire_maul.cpp
   Kalimdor/HallsOfOrigination/halls_of_origination.h
   Kalimdor/HallsOfOrigination/instance_halls_of_origination.cpp
   Kalimdor/HallsOfOrigination/boss_temple_guardian_anhuur.cpp
@@ -118,15 +132,32 @@ set(scripts_STAT_SRCS
   Kalimdor/HallsOfOrigination/boss_anraphet.cpp
   Kalimdor/Firelands/instance_firelands.cpp
   Kalimdor/Firelands/firelands.h
-  Kalimdor/Firelands/boss_alysrazor.cpp
-  Kalimdor/CavernsOfTime/DragonSoul/boss_blackhorn.cpp
-  Kalimdor/CavernsOfTime/DragonSoul/boss_deathwing.cpp
-  Kalimdor/CavernsOfTime/DragonSoul/boss_hagara.cpp
-  Kalimdor/CavernsOfTime/DragonSoul/boss_morchok.cpp
-  Kalimdor/CavernsOfTime/DragonSoul/boss_yorsahj.cpp
-  Kalimdor/CavernsOfTime/DragonSoul/boss_zonozz.cpp
-  Kalimdor/CavernsOfTime/DragonSoul/dragon_soul.h
-  Kalimdor/CavernsOfTime/DragonSoul/instance_dragon_soul.cpp
+  Kalimdor/Firelands/boss_alysrazar.cpp
+  Kalimdor/Firelands/boss_baleroc_the_doorkeeper.cpp
+  Kalimdor/Firelands/boss_belthtilac.cpp
+  Kalimdor/Firelands/boss_ragnaros.cpp
+  Kalimdor/Firelands/boss_rhyolith.cpp
+  Kalimdor/Firelands/boss_majordomus.cpp
+  Kalimdor/Firelands/boss_shannox.cpp
+  Kalimdor/LostCityOfTheTolvir/instance_lost_city_of_the_tolvir.cpp
+
+  Kalimdor/LostCityOfTheTolvir/lost_city_of_the_tolvir.cpp
+
+  Kalimdor/LostCityOfTheTolvir/lost_city_of_the_tolvir.h
+
+  Kalimdor/LostCityOfTheTolvir/boss_lockmaw.cpp
+
+  Kalimdor/LostCityOfTheTolvir/boss_high_prophet_barim.cpp
+  Kalimdor/VortexPinnacle/boss_altairus.cpp
+
+  Kalimdor/VortexPinnacle/boss_asaad.cpp
+
+  Kalimdor/VortexPinnacle/boss_grand_vizier_ertan.cpp
+
+  Kalimdor/VortexPinnacle/instance_vortex_pinnacle.cpp
+
+  Kalimdor/VortexPinnacle/vortex_pinnacle.cpp
+  Kalimdor/VortexPinnacle/vortex_pinnacle.h
 )
 
 message("  -> Prepared: Kalimdor")

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
+ * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -410,7 +410,7 @@ public:
         void JustSummoned(Creature* summoned) OVERRIDE
         {
             if (instance)
-                if (Player* Target = Unit::GetPlayer(*me, instance->GetData64(DATA_PLAYER_GUID)))
+                if (Player* Target = ObjectAccessor::GetPlayer(*me, instance->GetData64(DATA_PLAYER_GUID)))
                     summoned->AI()->AttackStart(Target);
 
             Summons.Summon(summoned);

@@ -70,8 +70,8 @@ public:
 
 			if (fleche_de_feu<= diff)
 			{
-			    if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_fleche_de_feu);
+			    if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_fleche_de_feu);
 				fleche_de_feu  = 30000;							
             }
 		    else

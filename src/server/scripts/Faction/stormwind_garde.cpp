@@ -41,7 +41,7 @@ struct mob_chevaucheur_de_griffon_de_hurleventAI : public ScriptedAI
 				
 				if (tir<= diff)
 				{
-				        DoCast(me->getVictim(), spell_tir);
+				    //    DoCast(me->getVictim(), spell_tir);
 						tir = 5000;
 				} else tir -= diff;
 				DoMeleeAttackIfReady();
@@ -81,7 +81,7 @@ struct mob_garde_de_hurleventAI : public ScriptedAI
 				
 				if (tir<= diff)
 				{
-				        DoCast(me->getVictim(), spell_tir);
+				  //      DoCast(me->getVictim(), spell_tir);
 						tir = 5000;
 				} else tir -= diff;
 				DoMeleeAttackIfReady();
@@ -121,7 +121,7 @@ struct mob_garde_du_port_de_hurleventAI : public ScriptedAI
 				
 				if (tir<= diff)
 				{
-				        DoCast(me->getVictim(), spell_tir);
+				     //   DoCast(me->getVictim(), spell_tir);
 						tir = 5000;
 				} else tir -= diff;
 				DoMeleeAttackIfReady();
@@ -161,7 +161,7 @@ struct mob_patrouilleur_de_hurleventAI : public ScriptedAI
 				
 				if (tir<= diff)
 				{
-				        DoCast(me->getVictim(), spell_tir);
+				     //   DoCast(me->getVictim(), spell_tir);
 						tir = 5000;
 				} else tir -= diff;
 				DoMeleeAttackIfReady();
@@ -210,25 +210,25 @@ struct mob_garde_royal_de_hurleventAI : public ScriptedAI
 				
 				if (cracher<= diff)
 				{
-				        DoCast(me->getVictim(), spell_cracher);
+				   //     DoCast(me->getVictim(), spell_cracher);
 						cracher = 45000;
 				} else cracher -= diff;
 				
 				if (odeur_de_banane_pourrie<= diff)
 				{
-				        DoCast(me->getVictim(), spell_odeur_de_banane_pourrie);
+				    //    DoCast(me->getVictim(), spell_odeur_de_banane_pourrie);
 						odeur_de_banane_pourrie = 45000;
 				} else odeur_de_banane_pourrie -= diff;
 				
 				if (odeur_de_pomme_pourrie<= diff)
 				{
-				        DoCast(me->getVictim(), spell_odeur_de_pomme_pourrie);
+				    //    DoCast(me->getVictim(), spell_odeur_de_pomme_pourrie);
 						odeur_de_pomme_pourrie = 45000;
 				}
 				
 				if (tir<= diff)
 				{
-				        DoCast(me->getVictim(), spell_tir);
+				     //   DoCast(me->getVictim(), spell_tir);
 						tir = 5000;
 				} else tir -= diff;
 				DoMeleeAttackIfReady();

@@ -61,8 +61,8 @@ public:
 
             if (brulure_de_mana<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_brulure_de_mana);								
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_brulure_de_mana);								
                 brulure_de_mana = 45000; 
             }
             else
@@ -70,8 +70,8 @@ public:
 
 		    if (charme_de_masse<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_charme_de_masse);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_charme_de_masse);
 				
                 charme_de_masse = 90000; 
             }
@@ -89,8 +89,8 @@ public:
 			
 			if (horions_des_arcanes<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_horions_des_arcanes);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_horions_des_arcanes);
 				
                 horions_des_arcanes = 35000; 
             }
@@ -150,8 +150,8 @@ public:
 					
 			 if (fleches_multiples<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_fleches_multiples);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_fleches_multiples);
 												
                 fleches_multiples = 35000; 
             }
@@ -160,8 +160,8 @@ public:
 
 		    if (tir<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_tir);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_tir);
 				
                 tir = 25000; 
             }
@@ -225,8 +225,8 @@ public:
 
             if (armure_brulante<= diff)
             {
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_armure_brulante);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_armure_brulante);
 												
                 armure_brulante = 100000; 
             }
@@ -244,8 +244,8 @@ public:
 
 			if (boule_de_feu<= diff)
 			{
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_boule_de_feu);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_boule_de_feu);
 				
 				boule_de_feu  = 15000;							
             }
@@ -254,8 +254,8 @@ public:
 				
 			if (choc_de_flammes<= diff)
 			{
-                if (Unit *pTarget = SelectUnit(SELECT_TARGET_RANDOM, 0))
-                                                DoCast(pTarget, spell_choc_de_flammes);
+                if (Unit* Target = SelectTarget(SELECT_TARGET_RANDOM, 0))
+                                                DoCast(Target, spell_choc_de_flammes);
 				
 				choc_de_flammes  = 60000;							
             }

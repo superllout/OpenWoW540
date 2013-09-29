@@ -1,17 +1,27 @@
 /*
- * Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
- * Copyright (C) 2013 Project Cerberus <http://www.erabattle.ru/>
+ * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
  *
- * This program is not free software; you can not redistribute it and/or modify it.
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the
+ * Free Software Foundation; either version 2 of the License, or (at your
+ * option) any later version.
  *
- * This program is distributed only by <http://www.erabattle.ru/>!
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "ScriptMgr.h"
 #include "ScriptedCreature.h"
 #include "Vehicle.h"
-#include "baradin_hold.h"
 #include "SpellScript.h"
+#include "SpellAuraEffects.h"
+#include "baradin_hold.h"
+
 enum Spells
 {
     SPELL_SEARING_SHADOWS               = 96913,
@@ -57,9 +67,9 @@ class boss_occuthar : public CreatureScript
             {
                 _EnterCombat();
                 instance->SendEncounterUnit(ENCOUNTER_FRAME_ENGAGE, me);
-                events.ScheduleEvent(EVENT_SEARING_SHADOWS, 35 * IN_MILLISECONDS);
-                events.ScheduleEvent(EVENT_FOCUSED_FIRE, 40 * IN_MILLISECONDS);
-                events.ScheduleEvent(EVENT_EYES_OF_OCCUTHAR, 60 * IN_MILLISECONDS);
+                events.ScheduleEvent(EVENT_SEARING_SHADOWS, 8 * IN_MILLISECONDS);
+                events.ScheduleEvent(EVENT_FOCUSED_FIRE, 15 * IN_MILLISECONDS);
+                events.ScheduleEvent(EVENT_EYES_OF_OCCUTHAR, 30 * IN_MILLISECONDS);
                 events.ScheduleEvent(EVENT_BERSERK, 5 * MINUTE * IN_MILLISECONDS);
             }
 
@@ -192,6 +202,26 @@ class npc_eyestalk : public CreatureScript
         }
 };
 
+class FocusedFireTargetSelector : public std::unary_function<Unit *, bool>
+{
+    public:
+        FocusedFireTargetSelector(Creature* me, const Unit* victim) : _me(me), _victim(victim) { }
+
+        bool operator() (WorldObject* target)
+        {
+            if (target == _victim && _me->getThreatManager().getThreatList().size() > 1)
+                return true;
+
+            if (target->GetTypeId() != TYPEID_PLAYER)
+                return true;
+
+            return false;
+        }
+
+        Creature* _me;
+        Unit const* _victim;
+};
+
 // 96872 - Focused Fire
 class spell_occuthar_focused_fire : public SpellScriptLoader
 {
@@ -207,6 +237,7 @@ class spell_occuthar_focused_fire : public SpellScriptLoader
                 if (targets.empty())
                     return;
 
+                targets.remove_if(FocusedFireTargetSelector(GetCaster()->ToCreature(), GetCaster()->GetVictim()));
                 WorldObject* target = Trinity::Containers::SelectRandomContainerElement(targets);
                 targets.clear();
                 targets.push_back(target);

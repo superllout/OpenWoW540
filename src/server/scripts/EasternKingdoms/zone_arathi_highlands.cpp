@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
+ * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
  * Copyright (C) 2006-2009 ScriptDev2 <https://scriptdev2.svn.sourceforge.net/>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -53,7 +53,7 @@ enum ProfessorPhizzlethorpe
     EVENT_SAY_3         = 1,
     EVENT_SAY_6         = 2,
     EVENT_SAY_8         = 3,
-    
+
     // Quests
     QUEST_SUNKEN_TREASURE   = 665,
     QUEST_GOGGLE_BOGGLE     = 26050,

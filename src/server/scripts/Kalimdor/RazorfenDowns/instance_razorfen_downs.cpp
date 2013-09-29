@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
+ * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -47,7 +47,7 @@ public:
 
         std::string str_data;
 
-        void Initialize()
+        void Initialize() OVERRIDE
         {
             uiGongGUID = 0;
 
@@ -56,7 +56,7 @@ public:
             memset(&m_auiEncounter, 0, sizeof(m_auiEncounter));
         }
 
-        std::string GetSaveData()
+        std::string GetSaveData() OVERRIDE
         {
             OUT_SAVE_INST_DATA;
 
@@ -71,7 +71,7 @@ public:
             return str_data;
         }
 
-        void Load(const char* in)
+        void Load(const char* in) OVERRIDE
         {
             if (!in)
             {
@@ -101,7 +101,7 @@ public:
             OUT_LOAD_INST_DATA_COMPLETE;
         }
 
-        void OnGameObjectCreate(GameObject* go)
+        void OnGameObjectCreate(GameObject* go) OVERRIDE
         {
             switch (go->GetEntry())
             {
