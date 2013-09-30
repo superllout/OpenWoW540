@@ -2,31 +2,35 @@ OpenWoW540
 ==========
 This emulator is based on a version of TrinityCore
 
-OpenWoW540 is World of Warcraft Emulator version 5.4.0 ( MoP ) - Dev -
+OpenWoW540 is an emulator for World of Warcraft Version 5.4.0, build Support 17399 - Mist of Pandaria.
 
+Our emulator is currently in development. It is also completely open source.
+You can help by providing updates via either end or through our forum.
 
-Our Emulator is Open !!
+We hire motivated people and common sense.
 
-Our repository is OpenSource, but we expect people who use it to help us develop.
+Our forum shook available on 10/10/2013, If you do not want to join our team, 
+but you want to help, "Contributor" you shook available, and give you access 
+to changes made ​​by BurstEmu (Private Project) or by another contributor or Staff
 
-On our forum, you can join our staff, become a contributor.
+----------------
 
-We also planned the opening of an international kingdom tested for all kinds. This, once the functional emulator.
+Sniff a section shook available, if you're a gamer official wow, you can also help 
+us by contributing in this way.
 
-Login : Work
+----------------
 
-World : Don't Work
+We also expect the opening of a kingdom (Only for the Tests). The authorized contributors 
+and members of our team will have coding grade Mj for possible modification or advanced tests.
 
-Server : x86 / x64 - Work
+Members will simply basic commands fast movement.
 
-Client support : x86 Build 17399 - Work
+The purpose of this kingdom is primarily for the development of our emulator and not a kingdom of games.
 
-Client support : x64 Build 17399 - Don't work
-
-
-
+------------------------------------
 Join : Http://www.OpenEmulator.com/
-(official Website 10/10/2013)
+------------------------------------
+
 
 **** Emulator Based Trinitycore ****
 
