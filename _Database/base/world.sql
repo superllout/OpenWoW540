@@ -1,1 +1,1 @@
--- BurstEmu World Database --
+-- OpenWorld World Database --
