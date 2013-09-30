@@ -2,7 +2,10 @@ OpenWoW540
 ==========
 
  Copyright (C) 2010-2013 OpenEmulator <http://www.openemulator.com/>
+ https://github.com/OpenEmulator/OpenWoW540
+ 
  Copyright (C) 2008-2013 TrinityCore <http://www.trinitycore.org/>
+ https://github.com/TrinityCore/TrinityCore
 
 
 This emulator is based on a version of TrinityCore
