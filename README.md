@@ -27,6 +27,5 @@ Members will simply basic commands fast movement.
 
 The purpose of this kingdom is primarily for the development of our emulator and not a kingdom of games.
 
-------------------------------------
 Join : Http://www.OpenEmulator.com/
-------------------------------------
+
