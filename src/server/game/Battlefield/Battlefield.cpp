@@ -1169,8 +1169,10 @@ bool BfCapturePoint::IsInsideObjective(Player* player) const
 
 /*
 *
-* This Code is the property of public and private projects BurstEmu & OpenEmu In the event of 
-* unauthorized modification and unauthorized copy, a complaint can and shook filed. 
+* This Code is the property of public and private projects BurstEmu & OpenEmu 
+* (B.u.r.s.t.E.m.u & O.p.e.n.E.m.u) In the event of unauthorized modification 
+* and unauthorized copy, a complaint can and shook filed.
+*  
 * Code under Copyright
 *
 */
