@@ -979,9 +979,8 @@ void WorldSession::HandleUpdateAccountData(WorldPacket& recvData)
 {
     TC_LOG_DEBUG(LOG_FILTER_NETWORKIO, "WORLD: Received CMSG_UPDATE_ACCOUNT_DATA");
 
-    uint32 timestamp, type, decompressedSize;
-    recvData >> timestamp >> decompressedSize;
-    recvData.WriteBits(type, 3);
+    uint32 type, timestamp, decompressedSize;
+    recvData >> type >> timestamp >> decompressedSize;
 
     TC_LOG_DEBUG(LOG_FILTER_NETWORKIO, "UAD: type %u, time %u, decompressedSize %u", type, timestamp, decompressedSize);
 

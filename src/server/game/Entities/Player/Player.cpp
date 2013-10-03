@@ -24513,10 +24513,7 @@ void Player::SendCorpseReclaimDelay(bool load)
 
     //! corpse reclaim delay 30 * 1000ms or longer at often deaths
     WorldPacket data(SMSG_CORPSE_RECLAIM_DELAY, 4);
-    bool bit1;
-
-    if (!bit1)
-        data << uint32(delay*IN_MILLISECONDS);
+    data << uint32(delay*IN_MILLISECONDS);
     GetSession()->SendPacket(&data);
 }
 
