@@ -10,16 +10,17 @@
 
 set(scripts_STAT_SRCS
   ${scripts_STAT_SRCS}
-  Faction/boss_baine_sabot_de_sang.cpp
-  Faction/boss_dame_sylvanas_coursevent.cpp
-  Faction/boss_forgefer.cpp
-  Faction/boss_garrosh_hurlenfer.cpp
-  Faction/boss_lune_d_argent.cpp
-  Faction/boss_prophete_velen.cpp
-  Faction/boss_tyrande_murmevent.cpp
-  Faction/boss_varian_wrynn.cpp
-  Faction/orgrimmar_garde.cpp
-  Faction/stormwind_garde.cpp
+  Faction/boss_baine_bloodhoof.cpp
+  Faction/boss_garrosh_hellscream.cpp
+  Faction/boss_ironforge.cpp
+  Faction/boss_king_varian_wrynn.cpp
+  Faction/boss_lady_sylvanas_windrunner.cpp
+  Faction/boss_prophet_velen.cpp
+  Faction/boss_silvermoon.cpp
+  Faction/boss_tyrande_whisperwind.cpp
+  Faction/guard_orgrimmar.cpp
+  Faction/guard_stormwind.cpp
+
 )
 
 message("  -> Prepared: Faction")
