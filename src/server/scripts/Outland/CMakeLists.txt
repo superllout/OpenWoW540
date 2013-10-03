@@ -84,10 +84,10 @@ set(scripts_STAT_SRCS
   Outland/Auchindoun/ShadowLabyrinth/instance_shadow_labyrinth.cpp
   Outland/Auchindoun/ShadowLabyrinth/shadow_labyrinth.h
   Outland/Auchindoun/ShadowLabyrinth/boss_grandmaster_vorpil.cpp
-  Outland/boss_doomwalker.cpp
+  Outland/worldboss_doomwalker.cpp
   Outland/zone_terokkar_forest.cpp
   Outland/zone_hellfire_peninsula.cpp
-  Outland/boss_doomlord_kazzak.cpp
+  Outland/worldboss_doomlord_kazzak.cpp
   Outland/BlackTemple/boss_teron_gorefiend.cpp
   Outland/BlackTemple/black_temple.h
   Outland/BlackTemple/illidari_council.cpp
