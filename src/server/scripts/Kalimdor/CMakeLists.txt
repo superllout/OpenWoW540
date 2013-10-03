@@ -140,24 +140,17 @@ set(scripts_STAT_SRCS
   Kalimdor/Firelands/boss_majordomus.cpp
   Kalimdor/Firelands/boss_shannox.cpp
   Kalimdor/LostCityOfTheTolvir/instance_lost_city_of_the_tolvir.cpp
-
   Kalimdor/LostCityOfTheTolvir/lost_city_of_the_tolvir.cpp
-
   Kalimdor/LostCityOfTheTolvir/lost_city_of_the_tolvir.h
-
   Kalimdor/LostCityOfTheTolvir/boss_lockmaw.cpp
-
   Kalimdor/LostCityOfTheTolvir/boss_high_prophet_barim.cpp
   Kalimdor/VortexPinnacle/boss_altairus.cpp
-
   Kalimdor/VortexPinnacle/boss_asaad.cpp
-
   Kalimdor/VortexPinnacle/boss_grand_vizier_ertan.cpp
-
   Kalimdor/VortexPinnacle/instance_vortex_pinnacle.cpp
-
   Kalimdor/VortexPinnacle/vortex_pinnacle.cpp
   Kalimdor/VortexPinnacle/vortex_pinnacle.h
+  
 )
 
 message("  -> Prepared: Kalimdor")
