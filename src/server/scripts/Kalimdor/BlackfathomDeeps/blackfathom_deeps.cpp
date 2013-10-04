@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 - CoalitionWoW <http://coalitionwow.no-ip.org/>
+ * Copyright (C) 2013 - OpenEmulator <http://www.openemulator.com/>>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
