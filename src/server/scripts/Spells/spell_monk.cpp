@@ -16,3 +16,15 @@
 #include "ScriptMgr.h"
 #include "SpellScript.h"
 #include "SpellAuraEffects.h"
+
+enum MonkSpells
+{
+    SPELL_MONK_EXPEL_HARM                       = 115072,
+    SPELL_MONK_FISTS_OF_FURY                    = 113656,
+    SPELL_MONK_FLYING_SERPENT_KICK              = 101545,
+    SPELL_MONK_SPINNING_CRANE_KICK              = 101546,
+    SPELL_MONK_TOUCH_OF_DEATH                   = 115080,
+    SPELL_MONK_INVOKE_XUEN                      = 123904,
+};
+
+

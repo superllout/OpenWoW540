@@ -19,7 +19,7 @@ You can help by providing updates via either end or through our forum.
 
 We hire motivated people and common sense.
 
-Our forum shook available on 10/10/2013, If you do not want to join our team, 
+Our forum is NOW AVAILABLE, If you do not want to join our team, 
 but you want to help, "Contributor" you shook available, and give you access 
 to changes made ​​by BurstEmu (Private Project) or by another contributor or Staff
 
