@@ -25,6 +25,7 @@
 char const Achievementfmt[] = "niixsxiixixxiix";
 const std::string CustomAchievementfmt = "pppaaaapapaappa";
 const std::string CustomAchievementIndex = "ID";
+char const AchievementCategoryfmt[]="niixsxiixixxii"; // Fix me
 char const AchievementCriteriafmt[] = "niiiixiiiisiiiiixxiiiii";
 char const AreaTableEntryfmt[] = "iiinixxxxxisiiiiiffixxxxxxxxxx";
 char const AreaGroupEntryfmt[] = "niiiiiii";
@@ -145,6 +146,7 @@ char const SpellTargetRestrictionsEntryfmt[] = "nixfxiiii";
 char const SpellPowerEntryfmt[] = "dixiiiiixfxxx";
 char const SpellInterruptsEntryfmt[] = "dixixixi";
 char const SpellEquippedItemsEntryfmt[] = "dixiii";
+char const SpellMiscEntryfmt[]="nixiiiiiiiiiixiiifiiiiix";
 char const SpellAuraOptionsEntryfmt[] = "nixiiii";
 char const SpellAuraRestrictionsEntryfmt[] = "dixiiiiiiii";
 char const SpellCastingRequirementsEntryfmt[] = "dixxixi";
