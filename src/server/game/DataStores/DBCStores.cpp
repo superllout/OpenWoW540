@@ -261,46 +261,38 @@ static bool LoadDBC_assert_print(uint32 fsize, uint32 rsize, const std::string& 
 }
 
 template<class T>
-inline void LoadDBC(uint32& availableDbcLocales, StoreProblemList& errors, DBCStorage<T>& storage, std::string const& dbcPath, std::string const& filename, std::string const* customFormat = NULL, std::string const* customIndexName = NULL)
+inline void LoadDBC(uint32& availableDbcLocales, StoreProblemList& errlist, DBCStorage<T>& storage, const std::string& dbc_path, const std::string& filename, const std::string * custom_entries = NULL, const std::string * idname = NULL)
 {
     // compatibility format and C++ structure sizes
-    ASSERT(DBCFileLoader::GetFormatRecordSize(storage.GetFormat()) == sizeof(T) || LoadDBC_assert_print(DBCFileLoader::GetFormatRecordSize(storage.GetFormat()), sizeof(T), filename));
+    if (!(DBCFileLoader::GetFormatRecordSize(storage.GetFormat()) == sizeof(T) || LoadDBC_assert_print(DBCFileLoader::GetFormatRecordSize(storage.GetFormat()), sizeof(T), filename)))
+        return;
 
     ++DBCFileCount;
-    std::string dbcFilename = dbcPath + filename;
+    std::string dbc_filename = dbc_path + filename;
     SqlDbc * sql = NULL;
-    if (customFormat)
-        sql = new SqlDbc(&filename, customFormat, customIndexName, storage.GetFormat());
+    if (custom_entries)
+        sql = new SqlDbc(&filename, custom_entries, idname, storage.GetFormat());
 
-    if (storage.Load(dbcFilename.c_str(), sql))
+    if (storage.Load(dbc_filename.c_str(), sql))
     {
-        for (uint8 i = 0; i < TOTAL_LOCALES; ++i)
-        {
-            if (!(availableDbcLocales & (1 << i)))
-                continue;
-
-            std::string localizedName(dbcPath);
-            localizedName.append(localeNames[i]);
-            localizedName.push_back('/');
-            localizedName.append(filename);
-
-            if (!storage.LoadStringsFrom(localizedName.c_str()))
-                availableDbcLocales &= ~(1<<i);             // mark as not available for speedup next checks
-        }
     }
     else
     {
         // sort problematic dbc to (1) non compatible and (2) non-existed
-        if (FILE* f = fopen(dbcFilename.c_str(), "rb"))
+        FILE * f=fopen(dbc_filename.c_str(), "rb");
+        if (f)
         {
-            std::ostringstream stream;
-            stream << dbcFilename << " exists, and has " << storage.GetFieldCount() << " field(s) (expected " << strlen(storage.GetFormat()) << "). Extracted file might be from wrong client version or a database-update has been forgotten.";
-            std::string buf = stream.str();
-            errors.push_back(buf);
+			printf("Can't LOAD dbc %s !\n", dbc_filename.c_str());
+            char buf[100];
+            snprintf(buf, 100, " (exist, but have %d fields instead " SIZEFMTD ") Wrong client version DBC file?", storage.GetFieldCount(), strlen(storage.GetFormat()));
+            errlist.push_back(dbc_filename + buf);
             fclose(f);
         }
         else
-            errors.push_back(dbcFilename);
+		{
+            printf("Can't OPEN dbc %s !\n", dbc_filename.c_str());
+            errlist.push_back(dbc_filename);
+        }
     }
 
     delete sql;

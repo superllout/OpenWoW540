@@ -313,7 +313,7 @@ public:
     uint32 AttributesEx7;
     uint32 AttributesEx8;
     uint32 AttributesEx9;
-    uint32 AttributesEx10;
+    // uint32 AttributesEx10; //MOP removes it
     uint32 AttributesCu;
     uint32 Stances;
     uint32 StancesNot;
@@ -373,7 +373,7 @@ public:
     uint32 PreventionType;
     int32  AreaGroupId;
     uint32 SchoolMask;
-    uint32 SpellDifficultyId;
+    // uint32 SpellDifficultyId; // MOP removes it
     uint32 SpellScalingId;
     uint32 SpellAuraOptionsId;
     uint32 SpellAuraRestrictionsId;
@@ -389,6 +389,7 @@ public:
     uint32 SpellShapeshiftId;
     uint32 SpellTargetRestrictionsId;
     uint32 SpellTotemsId;
+	uint32 SpellMiscId;
     // SpellScalingEntry
     int32  CastTimeMin;
     int32  CastTimeMax;
@@ -401,6 +402,7 @@ public:
     SpellChainNode const* ChainEntry;
 
     // struct access functions
+	//SpellMiscEntry const* GetSpellMiscs() const;
     SpellTargetRestrictionsEntry const* GetSpellTargetRestrictions() const;
     SpellAuraOptionsEntry const* GetSpellAuraOptions() const;
     SpellAuraRestrictionsEntry const* GetSpellAuraRestrictions() const;
