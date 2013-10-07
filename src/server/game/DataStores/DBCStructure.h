@@ -1808,7 +1808,7 @@ struct SpellTotemsEntry
     uint32    TotemCategory[MAX_SPELL_TOTEMS];                // 1        m_requiredTotemCategoryID
     uint32    Totem[MAX_SPELL_TOTEMS];                        // 2        m_totem
 };
-
+/*
 struct SpellMiscEntry
 {
     uint32    Id;                                           // 0        m_ID
@@ -1835,7 +1835,7 @@ struct SpellMiscEntry
     uint32    SchoolMask;                                   // 22       m_schoolMask
     //uint32 Unknown;                                       // 23       5.0.4
 };
-
+*/
 // Spell.dbc
 struct SpellEntry
 {

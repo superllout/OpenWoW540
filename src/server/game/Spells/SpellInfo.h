@@ -402,7 +402,7 @@ public:
     SpellChainNode const* ChainEntry;
 
     // struct access functions
-	SpellMiscEntry const* GetSpellMiscs() const;
+	//SpellMiscEntry const* GetSpellMiscs() const;
     SpellTargetRestrictionsEntry const* GetSpellTargetRestrictions() const;
     SpellAuraOptionsEntry const* GetSpellAuraOptions() const;
     SpellAuraRestrictionsEntry const* GetSpellAuraRestrictions() const;

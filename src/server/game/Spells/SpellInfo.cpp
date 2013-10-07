@@ -866,6 +866,7 @@ SpellEffectInfo::StaticData SpellEffectInfo::_data[TOTAL_SPELL_EFFECTS] =
 SpellInfo::SpellInfo(SpellEntry const* spellEntry, SpellEffectEntry const** effects)
 {
     Id = spellEntry->Id;
+	/*
     SpellMiscEntry const* misc = GetSpellMiscs();
     Attributes = misc ? misc->Attributes : 0;
     AttributesEx = misc ? misc->AttributesEx : 0;
@@ -906,7 +907,7 @@ SpellInfo::SpellInfo(SpellEntry const* spellEntry, SpellEffectEntry const** effe
     SpellShapeshiftId = spellEntry->SpellShapeshiftId;
     SpellTargetRestrictionsId = spellEntry->SpellTargetRestrictionsId;
     SpellTotemsId = spellEntry->SpellTotemsId;
-
+	*/
     // SpellDifficultyEntry
     for (uint8 i = 0; i < MAX_SPELL_EFFECTS; ++i)
         Effects[i] = SpellEffectInfo(spellEntry, this, i, effects[i]);
@@ -2807,12 +2808,12 @@ bool SpellInfo::_IsPositiveTarget(uint32 targetA, uint32 targetB)
         return _IsPositiveTarget(targetB, 0);
     return true;
 }
-
-//SpellMiscEntry const* SpellInfo::GetSpellMiscs() const
-//{
-//    return SpellMiscId ? sSpellMiscStore.LookupEntry(SpellMiscId) : NULL;
-//}
-
+/*
+SpellMiscEntry const* SpellInfo::GetSpellMiscs() const
+{
+    return SpellMiscId ? sSpellMiscStore.LookupEntry(SpellMiscId) : NULL;
+}
+*/
 SpellTargetRestrictionsEntry const* SpellInfo::GetSpellTargetRestrictions() const
 {
     return SpellTargetRestrictionsId ? sSpellTargetRestrictionsStore.LookupEntry(SpellTargetRestrictionsId) : NULL;
